@@ -1,7 +1,66 @@
 * {
   box-sizing: border-box;
 }
-.block{
-   width: 300px;
-   height: 400px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inter;
+
+}
+.block {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.block img {
+  position: relative;
+  top: 20px;,
+  z-index: -1;
+}
+.block-info {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+.item {
+   height: 60px;
+   width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgb(92, 92, 92);
+  cursor: pointer;
+
+}
+.item img{
+   width: 30px;
+}
+.item:hover{
+   background-color: rgb(59, 59, 59);
+  transition: .4s;
+
+}
+.item:active{
+   position: relative;
+   top: 1px;
+  transition: .1s;
+
+}
+
+.t-shirt-info {
+   border-bottom: 3px solid   rgb(223, 145, 0);
+   ;
+   text-align: center;
+}
+.t-shirt-info p{
+   color: rgb(143, 139, 139);
+}
+.t-shirt-info span{
+   font-size: 18px;
+   color: rgb(223, 145, 0);
+   font-weight: 600;
+
 }
